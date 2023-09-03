@@ -5,10 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>tic_tac_toe</title>
-  <style></style>
-
+  <style>
+    .board{
+      display:grid;
+      grid-template-columns:repat(3,100px);
+      gap:5px;
+    }
+    .cell{
+      width:100px;
+      height:100px;
+      text-align: center;
+      font-size: 24px;
+      cursor:pointer;
+    }
+  </style>
 </head>
 <body>
-  <!-- Enter your code here -->
+  <div class="board" id="board"></div>
+  <p id="winner"></p>
+  <script>
+    const board=document.getElementById("board");
+    const winnerDisplay=document.getElementById("winner");
+    let current
+  </script>
 </body>
 </html>
