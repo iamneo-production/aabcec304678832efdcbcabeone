@@ -26,7 +26,15 @@
   <script>
     const board=document.getElementById("board");
     const winnerDisplay=document.getElementById("winner");
-    let current
+    let currentPlayer='X';
+    let boardState=[",",",",",",",",","];
+    let gameActive=true;
+    board.addEventListener('click',handleCellClick);
+    function handleCellClick(event){
+      const cell=ebent.target
+    }
+
+
   </script>
 </body>
 </html>
