@@ -8,5 +8,8 @@ body {
     background-position: center center;
     font-family: "Radio Canada", sans-serif;
   }
-  
-/* Enter your styling here */
+  .board{
+    display:grid;
+    grid-template-columns: :repeat(3,100px);
+    gap:5px
+  }

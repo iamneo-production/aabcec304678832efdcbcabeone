@@ -58,10 +58,20 @@
         [0,3,6],
         [1,4,7],
         [2,5,8],
-      ]
+        [0,4,8],
+        [2,4,6]
+      ];
+      for(const combination of winningCombinations){
+        const[a,b,c]=combination;
+        if(boardState[a]&&boardState[a]===boardState[b]&&boardState[a]===boardState[c]){
+          return true;
+        }
+      }
+      return false;
     }
-
-
+    function isBoardFull(){
+      return boardState.every(cell=>cell!=="");
+    }
   </script>
 </body>
 </html>
